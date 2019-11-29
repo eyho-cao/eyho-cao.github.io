@@ -1,5 +1,9 @@
 
 <!-- CPS530 Assignment Skeleton Framework temp -->
+<!-- TODO List:
+      form to input todo list
+      table to display todo list
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,10 +38,27 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container" style="text-align:center;">
-    <p>CPS530 Demo Page</p>
+    <h4>CPS530 Demo Page</h4>
   </div>
   <div class="container">
-    
+    <form>
+  <div class="row">
+    <div class="six columns">
+      <label for="todoInput">Your email</label>
+      <input class="u-full-width" type="text" placeholder="Your Task" id="todoInput">
+    </div>
+    <div class="six columns">
+      <label for="todoOption">Option</label>
+      <select class="u-full-width" id="todoOption">
+        <option value="Option 1">Add</option>
+        <option value="Option 2">Remove</option>
+      </select>
+    </div>
+  </div>
+  <label for="todoDesc">Message</label>
+  <textarea class="u-full-width" placeholder="Describe Task" id="todoDesc"></textarea>
+  <input class="button-primary" type="submit" value="Submit">
+</form>
   </div>
 
 <!-- End Document
