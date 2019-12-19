@@ -1,150 +1,32 @@
-
-<!-- CPS530 Assignment Skeleton Framework temp -->
-<!-- TODO List:
-      form to input todo list
-      table to display todo list
--->
 <!DOCTYPE html>
-<html lang="en">
-<style>
-   .bg 
-      {
-        background-image: url("https://cdna.artstation.com/p/assets/images/images/009/548/270/large/jarvis-xciv-16x9-mute01.jpg?1519618354");
-        height:100%;
-      }
-   #iconButton {
-    padding-left:30px;
-    padding-right:30px;
-    display: inline-block;
-}
-   #footer 
-      {
-         position: fixed;
-         bottom: 0%; 
-      }
-</style>
-      
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>CPS530 Skeleton Page</title>
-  <meta name="description" content="Temp CPS530 Skeleton Page">
-  <meta name="author" content="Eyho Cao">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-      <!-- Bootstrap used only for the nav bar -->
-  <link rel="stylesheet" href="skeleton/normalize.css">
-  <link rel="stylesheet" href="skeleton/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
-<body class="bg">
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="teamProject_main.html"><span class="highlight">Aleshia</span> Web Design</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://scs.ryerson.ca/~e2cao/teamProject_main.html">HOME</a></li>
-        <li><a href="http://scs.ryerson.ca/~e2cao/teamProject_framwork.html">Installation</a></li>
-        <li><a href="http://scs.ryerson.ca/~e2cao/totorial.html">Tutorial</a></li>
-        <li><a href="https://eyho-cao.github.io/">Skeleton DEMO</a></li>
-	<li><a href="http://joshuahuerto2.pythonanywhere.com/admin/login/?next=/admin/">Django DEMO</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="http://scs.ryerson.ca/~e2cao/teamProject_feedback.html">Conclusions</a></li>
-            <li><a href="http://scs.ryerson.ca/~e2cao/teamProject_creits.html">Credits</a></li>
-          </ul>
-         </li>
-        </ul>
-      </div>
-  </div>
-</nav>
-
-      <center>
-      <div style="background-color:white;display:inline-block;text-align:center;border-radius:25px;margin-top:65px;">
-      <div class="container" style="text-align:center;">
-      <h4>CPS530 Demo Page</h4>
-            <h2> To-Do List UI Planning Template</h2>
-      </div>
-  <div class="container">
-   <form>
-  <div class="row">
-    <div class="six columns">
-      <label for="taskInput">Your Task</label>
-      <input class="u-full-width" type="text" placeholder="Task Name" id="taskInput">
-    </div>
-    <div class="six columns">
-      <label for="options">Options</label>
-      <select class="u-full-width" id="options">
-        <option value="Option 1">Add</option>
-        <option value="Option 2">Remove</option>
-      </select>
-    </div>
-  </div>
-  <label for="taskDescription">Message</label>
-  <textarea class="u-full-width" placeholder="Do this...." id="taskDescription"></textarea>
-  </label>
-  <input class="button-primary" type="submit" value="Submit">
-</form>
-            </div>
-      <div class="container">
-            <div class="row">
-                  <div class = "twelve columns" style="background-color:lightgrey;border-radius:25px;">Task</div>
-            </div>
-            <br>
-            <div class="row" style="border-bottom-style:solid;height:80px;">
-                  <div class="four columns" style="background-color:lightgrey;border-radius:25px;height:70px;">Picture</div>
-                  <div class="eight columns" style="background-color:lightgrey;border-radius:25px;height:70px;">Task Description</div>
-            </div>
-            <div class="row">
-                  <div class = "twelve columns" style="background-color:lightgrey;border-radius:25px;">Task</div>
-            </div>
-            <br>
-            <div class="row" style="border-bottom-style:solid;height:80px;">
-                  <div class="four columns" style="background-color:lightgrey;border-radius:25px;height:70px;">Picture</div>
-                  <div class="eight columns" style="background-color:lightgrey;border-radius:25px;height:70px;">Task Description</div>
-            </div>
-      </div>
-      </div>
-      </center>
-   <footer class="u-full-width">
- <center>
- <form id="iconButton" action="http://getskeleton.com/">
-  <input type="image" src="images/favicon.png" alt="Submit" width="100" height="100">
-</form>
- <form id="iconButton" action="https://www.djangoproject.com/">
-  <input type="image" src="images/django-pony.png" alt="Submit" width="100" height="100">
-</form>
-         </center>
-   </footer>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+<html>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="pageCSS.css">
+	<head>
+		<title>
+			Work In Progresss
+		</title>
+		<link rel="icon" type="image/png" href="images/wip.png">
+	</head>
+	<body>
+		<div>
+			<center>
+			<a href="#" class="rndBtn"> <!-- Change this "div" to button with rounded edges. On btnClick redirect to resume page?-->
+				<img class="rndImg" src="" alt="" height="30" width="30">
+				<p style="text-align: center">
+					Lourem Ipsum Stuff Filler. Yes.
+				</p>
+			</a>
+			<a href="#" class="rndBtn"> <!-- Change this "div" to button with rounded edges on btnClick redirect to personal page-->
+				<img class="rndImg" src="" alt="" height="30" width="30">
+				<p style="text-align: center">
+					Lourem Ipsum Stuff Filler. No.
+				</p>
+			</a>
+			</center>
+		</div>
+		<footer>
+		</footer>
+		
+	</body>
 </html>
