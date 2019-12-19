@@ -1,7 +1,6 @@
 .rndBtn
 {
-  border-style:solid;
-  border-width:2px;
+  border: 2px solid;
   border-radius: 25px;
   padding:20px;
 }
