@@ -1,6 +1,11 @@
-.rndBtn
-{
-  border: 2px solid;
-  border-radius: 25px;
-  padding:20px;
+#button1{
+    width: 300px;
+    height: 40px;
+}
+#button2{
+    width: 300px;
+    height: 40px;
+}
+#container{
+    text-align: center;
 }
